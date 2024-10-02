@@ -1,0 +1,646 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+
+    font-family: 'montserrat', sans-serif;
+
+
+}
+
+:root {
+
+    --verde-escuro: #14424b;
+    --verde: #2f9364;
+    --orange: #ff7c37;
+    --degrade--btn: linear-gradient(#fe9611, #ff5c00);
+    --color-p: #a1a1a1;
+    --color-p-2: #868585;
+
+
+}
+
+.backgound-verde {
+
+    background: var(--verde-escuro);
+}
+
+/* classe reutilizaveis*/
+
+.conteiner {
+
+    max-width: 1440px;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+
+section,
+footer {
+    padding: 2.7rem 0;
+}
+
+.btn-gradiente {
+    padding: 10px 25px;
+    color: antiquewhite;
+    border: none;
+    cursor: pointer;
+    background-image: var(--degrade--btn);
+}
+
+/*Classes do site*/
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo a {
+
+    font-size: 30px;
+    font-weight: bold;
+    color: antiquewhite;
+
+
+}
+
+.ul {
+    display: flex;
+    align-items: center;
+}
+
+.ul li {
+
+    margin: 0 35px;
+    font-size: 15px;
+
+}
+
+.ul li a {
+
+    color: antiquewhite;
+
+
+}
+
+
+/*Main*/
+
+main .conteiner {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.main-text {
+
+    width: 50%;
+    color: antiquewhite;
+
+
+}
+
+.main-text h1 {
+
+    font-size: 4.5rem;
+}
+
+.main-text div {
+
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.main-img {
+    width: 50%;
+}
+
+.main-img img {
+
+    width: 100%;
+}
+
+/*menu icon*/
+
+.menu-icon {
+
+
+    display: none;
+    position: relative;
+    z-index: 10;
+
+
+}
+
+/*resultados*/
+
+.resultados {
+    background: #fa8607;
+
+}
+
+.resultados .conteiner {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.resultados .resultados-text {
+    color: antiquewhite;
+    font-size: 1.6rem;
+    font-weight: 600;
+    width: 50%;
+
+}
+
+.resultados .resultados-numero {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: antiquewhite;
+
+
+}
+
+.resultados .resultados-numero p {
+
+    text-align: center;
+    margin: 0 30px;
+    font-size: 20px;
+
+}
+
+.resultados .resultados-numero p span {
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+/* section deferençiais */
+.diferenciais .conteiner {
+
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+
+.diferenciais .card {
+
+    width: 32%;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: floralwhite;
+    transition: 0.3s;
+
+
+
+}
+
+.diferenciais .card:hover {
+
+    box-shadow: 0px 5px 40px 2px #fe9611;
+
+}
+
+
+.diferenciais .card img {
+    width: 60px;
+}
+
+.diferenciais .card .titulo {
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+/*section casa */
+
+.casa .conteiner {
+
+    display: flex;
+    align-items: center;
+}
+
+.casa .casa-img {
+
+    width: 50%;
+
+
+}
+
+.casa .casa-img img {
+
+    width: 100%;
+    border-radius: 7px;
+
+
+}
+
+.casa .casa-text {
+
+    width: 50%;
+    padding-left: 90px;
+
+
+
+}
+
+.casa .casa-text p {
+
+    margin: 20px 0;
+    color: var(--color-p);
+
+
+}
+
+.casa .casa-text h2 {
+
+    font-size: 2.5em;
+
+
+
+}
+
+.casa .casa-text p b {
+
+    color: darkslategray;
+    font-size: 25px;
+
+
+
+}
+
+.melhores-lugares .azul {
+    font-size: 24px;
+    font-weight: 600;
+    color: darkcyan;
+}
+
+.melhores-lugares h2 {
+    font-size: 2.5rem;
+}
+
+.melhores-lugares .cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin: 50px 50px;
+}
+
+.melhores-lugares .cards .card-item {
+    width: 30%;
+    /* Alterado de 30px para 300px para garantir que o cartão tenha uma largura adequada */
+    text-align: center;
+    padding: 30px 0;
+    border-radius: 20px;
+    box-shadow: 0px 35px 97px -15px #e2c6a1;
+
+
+}
+
+.melhores-lugares .cards .card-item img {
+    max-width: 80px;
+    /* Garantir que a imagem não ultrapasse os limites do cartão */
+    border-radius: 10px;
+}
+
+.melhores-lugares .cards .local-casa {
+    margin: 5px 0;
+    color: var(--color-p);
+}
+
+.melhores-lugares .cards .nome-casa {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.melhores-lugares .cards .contato {
+    margin-bottom: 20px;
+    color: var(--color-p-2);
+}
+
+.melhores-lugares .cards button {
+    color: antiquewhite;
+    padding: 10px 20px;
+    background-color: var(--orange);
+    border: none;
+}
+
+/*section newsletter*/
+
+.newsletter {
+    background-color: #2f9364;
+    margin-top: 50px;
+
+}
+
+.newsletter .box-newsletter {
+    text-align: center;
+    background-image: url('../img/background-newsletter.png');
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+
+.newsletter .box-newsletter h2 {
+
+    font-size: 2.5rem;
+}
+
+.newsletter .box-newsletter p {
+
+    margin: 13px 0;
+}
+
+.newsletter .box-newsletter input {
+
+    width: 35%;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background-color: gainsboro;
+    color: #00000098;
+
+
+}
+
+.newsletter .box-newsletter button {
+
+    font-size: 15px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 14px;
+    color: antiquewhite;
+    background-color: var(--verde);
+    cursor: pointer;
+
+
+
+
+
+
+}
+
+
+
+
+
+/* endsection newsletter*/
+
+
+/*footer*/
+
+footer {
+    background-color: var(--verde-escuro);
+}
+
+footer .conteiner {
+    display: flex;
+    color: antiquewhite;
+}
+
+footer .conteiner ul {
+
+    width: 25%;
+
+}
+
+footer .conteiner h3 {
+
+    margin-bottom: 16px;
+    font-weight: 600;
+
+}
+
+footer .conteiner .redes-sociais img {
+
+    margin-right: 10px;
+
+}
+
+footer .conteiner ul>p {
+
+    margin-bottom: 40px;
+}
+
+footer .conteiner li {
+
+    margin: 10px 0;
+}
+
+footer .conteiner a {
+
+    color: antiquewhite;
+}
+
+
+
+
+/*end footer*/
+
+
+
+/*Responsivo*/
+
+
+@media (max-width: 960px) {
+
+    .menu-icon {
+
+
+        display: block;
+
+
+    }
+
+    .ul {
+        position: fixed;
+        background: var(--verde-escuro);
+        top: 0;
+        width: 100%;
+        height: 100%;
+        left: 100%;
+        transition: 0.3s;
+        flex-direction: column;
+        justify-content: center;
+
+
+
+    }
+
+    .ul li {
+
+        font-size: 20px;
+        margin: 20px 0;
+    }
+
+    .ul.ativo {
+
+        left: 0;
+    }
+
+
+    main .conteiner {
+
+        flex-direction: column;
+
+    }
+
+    main .conteiner .main-img {
+
+        width: 100%;
+
+    }
+
+    main .conteiner .main-text {
+
+        width: 100%;
+        text-align: center;
+
+    }
+
+    main .conteiner .main-text h1 {
+
+        font-size: 4rem;
+    }
+
+
+    main .conteiner .main-text div {
+
+        justify-content: center;
+    }
+
+    .resultados .conteiner {
+
+        flex-direction: column;
+
+    }
+
+    .resultados .resultados-text,
+    .resultados .resultados-numero {
+
+        width: 100%;
+        text-align: center;
+
+
+    }
+
+    .resultados-numero {
+        padding-top: 30px;
+
+    }
+
+    .diferenciais .container {
+
+        flex-direction: column;
+
+
+    }
+
+    .diferenciais .card {
+
+        width: 100%;
+
+    }
+
+    .card {
+        margin: 10px 0;
+    }
+
+    .casa .conteiner {
+
+        flex-direction: column-reverse;
+    }
+
+    .casa .casa-text,
+    .casa .casa-img {
+
+        width: 100%;
+        text-align: center;
+        padding: 0;
+
+
+
+
+    }
+
+    .melhores-lugares .cards {
+        flex-direction: column;
+
+    }
+
+    .melhores-lugares .cards .card-item {
+        width: 100%;
+        margin-top: 50px;
+
+
+    }
+
+    .newsletter .box-newsletter h2 {
+
+        font-size: 2.5rem;
+    }
+
+    .newsletter .box-newsletter input {
+
+        width: 90%;
+    }
+
+    .newsletter .box-newsletter {
+
+        padding: 50px;
+    }
+
+    .newsletter .box-newsletter button {
+
+        width: 50%;
+        margin-top: 20px;
+    }
+
+    footer .conteiner {
+
+        flex-direction: column;
+    }
+
+    footer .conteiner ul{
+
+        width: 100%;
+        margin-top: 15px;
+    }
+
+
+
+
+}
+
+@media (max-width: 440px) {
+
+    .resultados .resultados-numero {
+        flex-direction: column;
+    }
+
+    main .container .main-text h1 {
+        font-size: 3rem;
+    }
+
+}
